@@ -148,7 +148,6 @@ public class MainActivity extends Activity {
 		public void handleMessage(Message msg) {
 			// TODO Auto-generated method stub
 			String resultString;
-			//InputStream resultStream;去除转换，放在消息传递之前转换。
 			Bitmap resultbmp;
 			switch (msg.what) {
 			case 1:
@@ -166,42 +165,34 @@ public class MainActivity extends Activity {
 			case 4:
 				resultbmp = (Bitmap)msg.obj; 
 				imageday0.setImageBitmap(resultbmp);
-				System.out.println(4);
 				break;
 			case 5:
 				resultbmp = (Bitmap)msg.obj;
 				imageday1.setImageBitmap(resultbmp);
-				System.out.println(5);
 				break;
 			case 6:
 				resultbmp = (Bitmap)msg.obj;
 				imageday2.setImageBitmap(resultbmp);
-				System.out.println(6);
 				break;
 			case 7:
 				resultbmp = (Bitmap)msg.obj; 
-				imageday3.setImageBitmap(resultbmp);	
-				System.out.println(7);
+				imageday3.setImageBitmap(resultbmp);
 				break;
 			case 8:
 				resultbmp = (Bitmap)msg.obj;
 				imagenight0.setImageBitmap(resultbmp);
-				System.out.println(8);
 				break;
 			case 9:
 				resultbmp = (Bitmap)msg.obj;
 				imagenight1.setImageBitmap(resultbmp);
-				System.out.println(9);
 				break;
 			case 10:
 				resultbmp = (Bitmap)msg.obj; 
 				imagenight2.setImageBitmap(resultbmp);	
-				System.out.println(10);
 				break;
 			case 11:
 				resultbmp = (Bitmap)msg.obj;
 				imagenight3.setImageBitmap(resultbmp);
-				System.out.println(11);
 				break;
 			case 12:
 				resultString = (String)msg.obj;

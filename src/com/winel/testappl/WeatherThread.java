@@ -133,7 +133,6 @@ public class WeatherThread extends Thread{
 				InputStream imgStream = imgResponse.getEntity().getContent();
 				Message imgmsg = weaHandler.obtainMessage();
 				imgmsg.what = argidx;
-				//imgmsg.obj = imgStream;修改此处，将流转换好再传递消息，否则多消息，流转换错误
 				imgmsg.obj = BitmapFactory.decodeStream(imgStream);
 				weaHandler.sendMessage(imgmsg);
 			}
